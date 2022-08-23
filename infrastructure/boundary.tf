@@ -9,7 +9,7 @@ resource "random_password" "boundary_database" {
 module "boundary" {
   depends_on                   = [module.vpc]
   source                       = "app.terraform.io/nico-tfc/boundary/aws"
-  version                      = "v0.0.4"
+  version                      = "v0.0.5"
   vpc_id                       = module.vpc.vpc_id
   vpc_cidr_block               = module.vpc.vpc_cidr_block
   public_subnet_ids            = module.vpc.public_subnets
