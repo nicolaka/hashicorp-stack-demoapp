@@ -9,7 +9,7 @@ data "terraform_remote_state" "infrastructure" {
   config = {
     organization = var.tfc_organization
     workspaces = {
-      name = "infrastructure"
+      name = "hashicorp-stack-demoapp-infrastructure"
     }
   }
 }
