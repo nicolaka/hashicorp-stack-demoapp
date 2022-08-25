@@ -86,7 +86,7 @@ data "terraform_remote_state" "setup" {
   config = {
     organization = var.tfc_organization
     workspaces = {
-      name = "vault-setup"
+      name = "hashicorp-stack-demoapp-infrastructure"
     }
   }
 }
